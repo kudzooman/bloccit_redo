@@ -1,5 +1,12 @@
 require 'faker'
 
+30.times do
+  Question.create!(
+    title: Faker::Lorem.sentence,
+    body: Faker::Lorem.paragraph
+    )
+end
+
 10.times do 
   Advertisement.create!(
     title: Faker::Lorem.sentence,
@@ -26,4 +33,5 @@ puts "Seed finished"
 puts "#{Post.count} post created"
 puts "#{Comment.count} comments created"
 puts "#{Advertisement.count} advertisements created"
+puts "#{Question.count} questions created"
 
