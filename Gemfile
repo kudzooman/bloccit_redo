@@ -6,14 +6,14 @@ gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 
-group :production do 
+group :production do
   gem 'pg'
-  # Rails 4 requires some minor configuration changes in order to properly serve assets in this 
-  #capacity. That's why we are adding the rails_12factor gem to the production environment. 
+  # Rails 4 requires some minor configuration changes in order to properly serve assets in this
+  #capacity. That's why we are adding the rails_12factor gem to the production environment.
   gem 'rails_12factor'
 end
 
-group :development do 
+group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
@@ -42,11 +42,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-# user autorization 
+# user autorization
 gem 'devise'
 
 # provides an elegant solution for handling sensitive data with environment variables
 gem 'figaro', '1.0'
+
+gem 'pundit'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -59,4 +61,3 @@ gem 'figaro', '1.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
